@@ -1,0 +1,48 @@
+<!-- 标题和正文 -->
+<view class="cu-form-group" wx:for='{{InputList}}' wx:key='input'>
+  <!-- *title -->
+	<view class='title'>
+		<text decode="true">&nbsp;&nbsp;<text decode="true" style="color:#EE0A24;">*</text>{{item.title}}</text>
+	</view>
+  <!-- 输入框 -->
+	<input wx:if="{{item.tag == 'input'}}" placeholder="{{item.placeholder}}" class='radius' id="{{item.id}}" type="{{item.type}}" maxlength='{{item.maxlength}}' style='color: #0080ff;' bindinput="InputData" value="{{isEdit?FormData.title:''}}"></input>
+	<textarea  wx:if="{{item.tag == 'textarea'}}" placeholder="{{item.placeholder}}" class='radius' id="{{item.id}}" type="{{item.type}}" maxlength='{{item.maxlength}}' style='color: #0080ff;height:16em' bindinput="InputData" value="{{isEdit?FormData.introduction:''}}">
+    <!-- 当前字数/最大字数 -->
+		<text class="currentWordNumber">{{currentWordNumber}}/{{item.maxlength}}</text>
+	</textarea>
+</view>
+
+<!-- 照片标题描述 -->
+<view class="cu-form-group">
+	<view class='title'>
+		<text decode="true">&nbsp;&nbsp;<text decode="true" style="color:#EE0A24;">*</text>照片（{{imgList.length}}/4）
+    </text>
+	</view>
+</view>
+
+<!-- 照片选择 -->
+<view class="chooseImage">
+		<view class="choose_item" wx:for="{{imgList}}" wx:key="index" bindtap="ViewImage" data-url="{{imgList[index]}}">
+        <!-- 已选择的图片 -->
+			  <image src='{{imgList[index]}}'  class="choose_img"></image>
+        <!-- 图片右上角删除图标 -->
+        <image class="remove_img_icon" src="/images/delImg.svg" catchtap="DelImg" data-index="{{index}}"/>
+		</view>
+
+    <!-- 上传图片图标 -->
+		<view bindtap="ChooseImage" wx:if="{{imgList.length<10}}">
+      <image style="width: 91rpx;height: 91rpx;" src="/images/uploadImg.svg" />
+		</view>
+    
+</view>
+
+<!-- 发布文章按钮 -->
+<view class="padding flex flex-direction">
+	<button class='cu-btn lg submitbtn' form-type="SubmitEntrust" style="background:#E60000; border-radius: 18px;" bindtap="Submit">发布文章</button>
+</view>
+
+
+<!-- 自定义提示组件 -->
+<view class="custom-toast" hidden="{{!showToast}}">
+  <text>{{toastText}}</text>
+</view>

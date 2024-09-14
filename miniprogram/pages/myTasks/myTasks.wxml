@@ -1,0 +1,54 @@
+<!-- 纯文字横向导航栏 -->
+<scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+    <block wx:for="{{navData}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+        <view class="nav-item {{currentTab == idx ?'active':''}}" data-name="{{navItem.cat_name}}" data-current="{{idx}}"
+            bindtap="switchNav">{{navItem.cat_name}}</view>
+    </block>
+</scroll-view>
+
+
+
+
+
+
+
+<view wx:if="{{currentTab==0}}" class="plane_item">
+    <!-- <scroll-view style="height: 410px; width: 100vw;" scroll-y> -->
+    <view class="cu-card">
+        <view class="cu-item bg-img shadow-blur cardDynamic" style="background-image: linear-gradient({{item.bg_color}});"  wx:for="{{myTasks}}" wx:key="index">
+        <view class="taskDesc">
+          {{item.taskDesc}} | {{item.taskReward}} 币
+        </view>
+        <view class="createTime">领取时间: {{item.createTime}}</view>
+        <view class="deleteTask" bindtap="deleteTask" data-id="{{item._id}}">取消任务</view>
+        <view class="completeTask" bindtap="completeTask" data-id="{{item._id}}">完成任务</view>
+        </view>
+    </view>
+    <!-- </scroll-view> -->
+  </view>
+
+  <view wx:elif="{{currentTab==1}}" class="plane_item">
+    <!-- <scroll-view style="height: 410px; width: 100vw;" scroll-y> -->
+    <view class="cu-card">
+        <view class="cu-item bg-img shadow-blur cardDynamic" style="background-image: linear-gradient({{item.bg_color}});"  wx:for="{{auditindTasks}}" wx:key="index">
+        <view class="taskDesc">
+          {{item.taskDesc}} | {{item.taskReward}} 币
+        </view>
+        </view>
+    </view>
+    <!-- </scroll-view> -->
+  </view>
+
+  <view wx:elif="{{currentTab==2}}" class="plane_item">
+    <!-- <scroll-view style="height: 410px; width: 100vw;" scroll-y> -->
+    <view class="cu-card">
+        <view class="cu-item bg-img shadow-blur cardDynamic" style="background-image: linear-gradient({{item.bg_color}});"  wx:for="{{loverTasks}}" wx:key="index">
+        <view class="taskDesc">
+          {{item.taskDesc}} | {{item.taskReward}} 币
+        </view>
+        <view class="deleteTask" bindtap="passAudit" data-id="{{item._id}}" data-taskReward="{{item.taskReward}}">审核通过</view>
+        <view class="completeTask" bindtap="refuseAudit" data-id="{{item._id}}">驳回申请</view>
+        </view>
+    </view>
+    <!-- </scroll-view> -->
+  </view>

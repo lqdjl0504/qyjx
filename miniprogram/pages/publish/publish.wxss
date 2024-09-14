@@ -1,0 +1,20 @@
+page {
+  background: #EFF4FF;
+}
+.container {
+  width: 100vw;
+}
+.publish {
+  height: 50px;
+  width: 40%;
+  display: flex;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px auto;
+}
+
+.publish text{
+  margin: auto;
+  font-size: 20px;
+  color:#fff;
+}

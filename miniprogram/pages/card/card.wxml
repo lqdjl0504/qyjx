@@ -1,0 +1,19 @@
+<view class="page" wx:for="{{myCards}}" wx:key="index">
+  <view class="cardMain" style="background: linear-gradient({{item.cardColor}});">
+  
+    <view class="clearfix">
+      <image class="cardLogo" mode="scaleToFill" src="{{item.cardLogo}}"></image>
+      <view class="cardInfo">
+        <view class="first-child">{{item.cardName}}</view>
+        <view class="second-child">{{item.cardType}}</view>
+      </view>
+    </view>
+
+    <view class="clearfix">
+      <view class="first-child cardId">
+        {{item.cardID}}
+      </view>
+    </view>
+    
+  </view>
+</view>

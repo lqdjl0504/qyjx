@@ -1,0 +1,230 @@
+page{
+  height: 100%;
+  background-color: #f1f1f1;
+}
+/* 登录样式设置 */
+.wrapper{
+  position:relative;
+  z-index: 90;
+  padding-bottom: 40rpx;
+}
+.left-top-sign{
+  font-size: 120rpx;
+  color: #f8f8f8;
+  position:relative;
+  left: -16rpx;
+}
+.welcome{
+  position:relative;
+  left: 50rpx;
+  top: -90rpx;
+  font-size: 46rpx;
+  color: #555;
+}
+.input-content{
+  padding: 0 60rpx;
+}
+.input-item{
+  display:flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  padding: 0 30rpx;
+  background:#f8f6fc;
+  height: 100rpx;
+  border-radius: 30px;
+  margin-bottom: 50rpx;
+}
+.input-item:last-child{
+  margin-bottom: 0;
+}
+.input-item .tit{
+  height: 50rpx;
+  line-height: 56rpx;
+  font-size: 30rpx;
+  color: #606266;
+}
+.input-item input{
+  height: 60rpx;
+  font-size: 30rpx;
+  color: #303133;
+  width: 100%;
+}
+.confirm-btn{
+  width: 630rpx!important;
+  height: 76rpx;
+  line-height: 76rpx;
+  border-radius: 50rpx;
+  margin-top: 70rpx;
+  background: #d43c33;
+  color: #fff;
+  font-size: 32rpx;
+  padding: 0;
+}
+.confirm-btn2:after{
+  border-radius: 100px;
+}
+.forget-section{
+  font-size: 28rpx;
+  color: #4399fc;
+  text-align: center;
+  margin-top: 40rpx;
+}
+.register-section{
+  position:absolute;
+  left: 0;
+  bottom: 50rpx;
+  width: 100%;
+  font-size: 28rpx;
+  color: #606266;
+  text-align: center;
+}
+.register-section text{
+  color: #4399fc;
+  margin-left: 10rpx;
+}
+
+/* 面板样式设置 */
+.panel {
+  background-color: white;
+  border-radius: 3px;
+}
+
+.panel-list-item {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  padding: 0 10px;
+}
+
+/* 设置背景颜色 */
+.top-bg {
+  height: 200rpx;
+  /* background-color: #008c8c; */
+  background: 
+  radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+  radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+  radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+  radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+  radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%),
+  radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+  radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+  radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+  radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+  radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%) 50px 50px;
+  background-color:#b03;
+  background-size:100px 100px;
+}
+ 
+/* 圆角盒子 */
+.box {
+  background-color: white;
+  margin-top: -120rpx;
+  border-top-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  padding: 0 20rpx;
+  
+}
+ 
+/* 用户头像部分 */
+.head-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid #fbdbdc;
+  padding-bottom: 20rpx;
+}
+ 
+.avatar {
+  margin-top: -80rpx;
+  font-weight: inherit;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+ 
+.avatar::after {
+  border: none;
+}
+ 
+.head-img {
+  width: 140rpx;
+  height: 140rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #fbdbdc;
+}
+
+/* 用户昵称样式 */
+.nickname {
+  color: #606266;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.tip {
+  font-size: 26rpx;
+  color: gray;
+  margin: 15rpx 0;
+}
+ 
+/* 列表部分 */
+.row {
+  display: flex;
+  align-items: center;
+  padding: 36rpx 10rpx;
+  font-size: 30rpx;
+  font-weight: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1rpx solid #fbdbdc;
+}
+ 
+.row::after {
+  border: none;
+}
+ 
+.text {
+  margin-left: 15rpx;
+  color: #636262;
+}
+ 
+.left {
+  width: 90%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+ 
+.right {
+  width: 10%;
+  text-align: right;
+  color: rgb(148, 147, 147);
+}
+ 
+.end {
+  background-color: white;
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+}
+ 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 0;
+  font-size: 22rpx;
+  margin: 30rpx 0;
+  color: gray;
+}
+
+/* 币 */
+.coins {
+  font-size: 20px;
+  color: #FBD26A;
+  position:absolute;
+  right: 30px;
+  font-weight: bold;
+}

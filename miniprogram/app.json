@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/card/card",
+    "pages/publish/publish",
+    "pages/articleDetail/articleDetail",
+    "pages/publishArticle/publishArticle",
+    "pages/publishTask/publishTask",
+    "pages/publishCard/publishCard",
+    "components/dayBox/dayBox",
+    "pages/publishDay/publishDay",
+    "pages/myTasks/myTasks",
+    "pages/auditTasks/auditTasks"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "倩影江行",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "color": "#000000", 
+    "selectedColor": "#00BFFF",
+    "backgroundColor": "#FFFFFF", 
+    "borderStyle": "black", 
+    "position": "bottom", 
+    "custom": false, 
+    "list": [
+      {
+        "pagePath": "pages/index/index", 
+        "text": "首页", 
+        "iconPath": "./images/index.png", 
+        "selectedIconPath": "./images/selectedIndex.png" 
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布",
+        "iconPath": "./images/publish.png",
+        "selectedIconPath": "./images/selectedPublish.png"
+      },
+      {
+        "pagePath": "pages/card/card",
+        "text": "卡包",
+        "iconPath": "./images/card.png",
+        "selectedIconPath": "./images/selectedCard.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "./images/user.png",
+        "selectedIconPath": "./images/selectedUser.png"
+      }
+    ]
+}
+
+}

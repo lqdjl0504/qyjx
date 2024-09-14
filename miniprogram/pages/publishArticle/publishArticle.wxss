@@ -1,0 +1,231 @@
+
+.select-box {
+  height: 44px;
+  line-height: 44px;
+  color: #323233;
+  font-size: 14px;
+  padding-right: 15px;
+  border-bottom: 1rpx #f5f6f8 solid;
+  background-color: #fff;
+}
+
+.switch {
+  margin-top: 10px;
+  float: right;
+}
+
+.submit-btn {
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  margin: 30px 30px;
+  border-radius: 10rpx;
+  color: #fff;
+  background-color: #1989fa;
+}
+
+.select-color {
+  color: #ff8000;
+}
+
+.selected-color {
+  color: #0080ff;
+}
+
+.tag-box {
+  width: 90%;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  height: 64rpx;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  overflow: visible;
+  border: 1rpx solid #0081ff;
+  border-radius: 18rpx;
+}
+
+.padding-right-30rpx {
+  padding-right: 30rpx;
+}
+
+.padding {
+  padding: 10rpx;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-direction {
+  flex-direction: column;
+}
+
+.submitbtn {
+  width: 100%;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.padding-xs {
+padding: 10rpx;
+}
+
+.currentWordNumber{
+  font-size: 12px;
+  color: gray;
+  position: absolute;
+  right: 0rpx;
+  bottom: -6rpx;
+}
+
+/* ==================
+         表单
+ ==================== */
+
+ .cu-form-group {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  min-height: 100rpx;
+  justify-content: space-between;
+}
+
+.cu-form-group+.cu-form-group {
+  border-top: 1rpx solid #eee;
+}
+
+.cu-form-group .title {
+  text-align: justify;
+  padding-right: 30rpx;
+  font-size: 30rpx;
+  position: relative;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.cu-form-group.top {
+  align-items: baseline;
+}
+
+.cu-form-group input {
+  flex: 1;
+  font-size: 30rpx;
+  color: #555;
+  padding-right: 20rpx;
+}
+
+.cu-form-group>text[class*="icon"] {
+  font-size: 36rpx;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cu-form-group textarea, .cu-form-group textarea textarea {
+  margin: 32rpx 0 30rpx;
+  height: 4.8em;
+  width: 100%;
+  line-height: 1.2em;
+  flex: 1;
+  font-size: 28rpx;
+  padding: 0;
+  box-sizing: content-box;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.cu-form-group textarea::after {
+  content: "测试文字";
+  opacity: 0;
+}
+
+.cu-form-group .grid-square {
+  margin: 20rpx 0 0;
+}
+
+.cu-form-group picker {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.cu-form-group picker .picker {
+  line-height: 100rpx;
+  font-size: 28rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  text-align: right;
+}
+
+.cu-form-group picker::after {
+  font-family: iconfont;
+  display: block;
+  position: absolute;
+  font-size: 34rpx;
+  color: #aaa;
+  line-height: 100rpx;
+  width: 60rpx;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  right: -10rpx;
+  margin: auto;
+}
+
+.cu-form-group textarea[disabled],
+.cu-form-group textarea[disabled] .placeholder {
+  color: transparent;
+}
+
+/* 图片 */
+.chooseImage {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.choose_item {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+/* 所选图片 */
+.choose_img {
+  height:200rpx;
+  width: 200rpx;
+  border-radius: 10px;
+}
+
+/* 删除图片图标 */
+.remove_img_icon {
+  padding: 4rpx;
+  position:absolute;
+  top: -15rpx;
+  right: -13rpx;
+  width: 28rpx;
+  height: 28rpx;
+}
+
+/* 自定义提示组件的样式 */
+.custom-toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 1000;
+}

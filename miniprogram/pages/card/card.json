@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "cardBox":"/components/cardBox/cardBox"
+  },
+  "navigationBarBackgroundColor": "#81D8CF",
+  "navigationBarTitleText": "我的卡片"
+}

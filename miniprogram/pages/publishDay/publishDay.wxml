@@ -1,0 +1,32 @@
+<view class="container">
+  <!-- 标题和正文 -->
+  <view class="cu-form-group item" >
+    <!-- *title -->
+    <view class='title'>
+      <text decode="true">&nbsp;&nbsp;<text decode="true" style="color:#EE0A24;">*</text>{{dayNameList.title}}</text>
+    </view>
+    <!-- 输入框 -->
+    <input placeholder="{{dayNameList.placeholder}}" class='radius' id="{{dayNameList.id}}" type="{{dayNameList.type}}" maxlength='{{dayNameList.maxlength}}' style='color: #0080ff;' bindinput="InputData">
+    </input>
+  </view>
+
+  <!-- 纪念日类型选择 -->
+  <radio-group bindchange="bandleChange" class="item">
+    <radio color="red" value="{{dayTagList[0].value}}"> {{dayTagList[0].name}}</radio>
+    <radio color="red" value="{{dayTagList[1].value}}"> {{dayTagList[1].name}}</radio>
+  </radio-group>
+
+  <!-- 时间 -->
+  <view class="item" style="margin-top: 10px;">
+    <view class='title'>
+      <text decode="true">&nbsp;&nbsp;<text decode="true" style="color:#EE0A24;">*</text>时间选择</text>
+    </view>
+    <time-picker mode="dateTime" class="picker" placeholder="请选择时间" bind:onPickerChange="onPickerChange"></time-picker>
+  </view>
+
+  <!-- 发布悬赏按钮 -->
+  <view class="padding flex flex-direction tasks">
+    <button class='cu-btn lg submitbtn' form-type="SubmitEntrust" bindtap="Submit">添加纪念日</button>
+  </view>
+
+</view>

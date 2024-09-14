@@ -1,0 +1,185 @@
+/* 横向导航栏 */
+.nav {
+  height: 100rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 100rpx;
+  background: #f7f7f7;
+  font-size: 16px;
+  white-space: nowrap;
+  z-index: 99;
+  background-color: #fff;
+}
+.nav-item {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+  color: #333;
+  overflow: hidden;
+}
+.nav-item.active{
+  color: #09bb07;
+}
+
+/* 任务卡片样式 */
+.cu-card {
+  display: block;
+  overflow: hidden;
+}
+
+.cu-list.menu-avatar {
+  overflow: hidden;
+}
+
+.cu-list.menu-avatar>.cu-item {
+  position: relative;
+  display: flex;
+  padding-right: 10rpx;
+  /* height: 140rpx; */
+  height: 80rpx;
+  background-color: white;
+  justify-content: flex-end;
+  align-items: center
+}
+
+.cu-card>.cu-item.shadow-blur {
+  overflow: initial;
+}
+
+.bg-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 卡片底部 */
+.cu-list.menu-avatar>.cu-item .content.flex-sub {
+  width: calc(100% - 96rpx - 60rpx - 20rpx);
+}
+
+cu-list+.cu-list {
+  margin-top: 30rpx
+}
+
+.cu-list.menu-avatar {
+  overflow: hidden;
+}
+
+.cu-list>.cu-item {
+  transition: all .6s ease-in-out 0s;
+  transform: translateX(0rpx)
+}
+
+.cu-list.menu-avatar>.cu-item .content {
+  position: absolute;
+  left: 100rpx;
+  width: calc(100% - 96rpx - 60rpx - 120rpx - 20rpx);
+  line-height: 1.6em;
+}
+
+.cu-list.menu-avatar>.cu-item .content.flex-sub {
+  width: calc(100% - 96rpx - 60rpx - 20rpx);
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.cu-card>.cu-item {
+  display: block;
+  background-color: var(--white);
+  overflow: hidden;
+  border-radius: 25rpx;
+  /* height: 450rpx; */
+  margin: 30rpx;
+}
+
+.taskDesc {
+  color: #fff;
+  padding: 90rpx 60rpx;
+  font-size: 40rpx;
+  font-weight: 450;
+  transform: skew(-10deg, 0deg);
+  position: relative;
+  text-shadow: 0px 0px 6rpx rgba(0, 0, 0, 0.3)
+}
+
+.taskDesc::before {
+  content: "";
+  position: absolute;
+  width: 60rpx;
+  height: 6rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+  display: block;
+  top: 60rpx;
+  left: 50rpx;
+  transform: skew(10deg, 0deg);
+}
+
+.taskDesc::after {
+  content: "";
+  position: absolute;
+  width: 140rpx;
+  border-radius: 6rpx;
+  height: 24rpx;
+  background-color: #fff;
+  display: block;
+  bottom: 76rpx;
+  left: 90rpx;
+  transform: skew(10deg, 0deg);
+  opacity: 0.1;
+}
+
+.shadow-blur {
+  position: relative;
+}
+
+.shadow-blur::before {
+  content: "";
+  display: block;
+  background: inherit;
+  filter: blur(10rpx);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 10rpx;
+  left: 10rpx;
+  z-index: -1;
+  opacity: 0.4;
+  transform-origin: 0 0;
+  border-radius: inherit;
+  transform: scale(1, 1);
+}
+.createTime {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 450;
+  margin-left: 10px;
+}
+
+.completeTask {
+  position: relative;
+  left: 280px;
+  top:-10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 450;
+  width: 4.5em;
+
+}
+
+.deleteTask {
+  position: relative;
+  left: 280px;
+  top:-50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 450;
+  width: 4.5em;
+}

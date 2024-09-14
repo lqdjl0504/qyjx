@@ -1,0 +1,33 @@
+<!-- 轮播图 -->
+<view class="container">
+    <swiper autoplay="{{true}}" circular="{{true}}" indicator-dots="{{true}}" interval="2000" indicator-active-color="#f72727">
+        <block wx:for="{{detail.image}}" wx:key="index">
+            <swiper-item>
+                <view class="imgview" bindtap="ViewImage" data-url="{{item}}">
+                    <!-- <image src="{{item}}" mode="heightFix" bindload='imgHeight'></image> -->
+                    <image src="{{item}}" mode="heightFix"></image>
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+
+<!-- 用户信息 -->
+<view class="user-box">
+    <view class="user-box-portrait" bindtap="gootheruser" data-followerid="{{userInfo._openid}}">
+        <image  src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="nickName-box">
+        <view style="font-weight:500;">{{userInfo.nickName}}
+        </view>
+    </view>
+</view>
+
+<!-- 文章详情 -->
+<view class="contentBox">
+    <view class="contentBox-row-title title-text-font-weight">{{detail.title}}</view>
+    <textarea disabled="true" auto-height="true" placeholder="暂无" 
+    maxlength="200" value="{{detail.content}}"></textarea>
+</view>
+
+

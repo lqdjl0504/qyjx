@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "cardBox":"/components/cardBox/cardBox",
+    "dayBox":"/components/dayBox/dayBox"
+  },
+  "navigationBarBackgroundColor": "#81D8CF",
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true
+}

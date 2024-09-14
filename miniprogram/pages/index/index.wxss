@@ -1,0 +1,286 @@
+page {
+  background: #EFF4FF;
+  padding:0;
+}
+
+  /* 轮播图 */
+  .banner{ width:100%; height: 295rpx; }
+  .banner swiper{ height: 100%; width:100%;}
+  .banner image{ width: 100%; height: 295rpx;}
+
+
+  /* 横向导航栏 */
+  .major{ white-space: nowrap; padding:30rpx 0;}
+  .major .box{ text-align: center; width:20%; display: inline-block; }
+  .major .pic{width:100rpx; height: 100rpx;}
+  .major .txt {color: #333;font-size:26rpx; }
+  .major .txt.active{color: #09bb07;}
+
+
+/* 元文章列表 */
+.navBox {
+  margin: 2.5%;
+  border-radius: 36rpx;
+  background: white;
+  display: flex;
+  height: 120px;
+  width: 95vw;
+  padding: 24rpx 30rpx;
+}
+.navBox view {
+  /* padding: 24rpx 30rpx; */
+}
+.navBox .left{
+  width: 50vw;
+}
+
+.navBox .boxTitle{
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  white-space:nowrap; 
+  display: block;
+  color: red;
+  font-size: 18px;
+  padding: 24rpx 30rpx;
+}
+
+.navBox .boxTime{
+  display: block;
+  font-size: 12px;
+  padding: 24rpx 30rpx;
+}
+
+.navBox .right{
+  display:flex;
+  border-radius: 50rpx;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  width: 40vw;
+}
+.navBox .right image{
+    height: 70px;
+}
+.navBox view:not(:last-child) {
+  border-bottom: 1px solid rgb(235, 237, 239);
+}
+.bomTxt {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: rgb(126, 138, 155);
+  padding: 0rpx 0rpx 20rpx 0rpx;
+}
+
+/* 纪念日样式 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.anniversary, .countdown {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.anniversary-item, .countdown-item {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+}
+
+.container .title {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.container .date {
+  font-size: 24px;
+  color: #E91E63;
+  font-weight: bold;
+}
+
+
+/* 悬赏任务 */
+.cu-card {
+  display: block;
+  overflow: hidden;
+}
+
+.cu-list.menu-avatar {
+  overflow: hidden;
+}
+
+.cu-list.menu-avatar>.cu-item {
+  position: relative;
+  display: flex;
+  padding-right: 10rpx;
+  /* height: 140rpx; */
+  height: 80rpx;
+  background-color: white;
+  justify-content: flex-end;
+  align-items: center
+}
+
+.cu-card>.cu-item.shadow-blur {
+  overflow: initial;
+}
+
+.bg-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 卡片底部 */
+.cu-list.menu-avatar>.cu-item .content.flex-sub {
+  width: calc(100% - 96rpx - 60rpx - 20rpx);
+}
+
+cu-list+.cu-list {
+  margin-top: 30rpx
+}
+
+.cu-list.menu-avatar {
+  overflow: hidden;
+}
+
+.cu-list>.cu-item {
+  transition: all .6s ease-in-out 0s;
+  transform: translateX(0rpx)
+}
+
+.cu-list.menu-avatar>.cu-item .content {
+  position: absolute;
+  left: 100rpx;
+  width: calc(100% - 96rpx - 60rpx - 120rpx - 20rpx);
+  line-height: 1.6em;
+}
+
+.cu-list.menu-avatar>.cu-item .content.flex-sub {
+  width: calc(100% - 96rpx - 60rpx - 20rpx);
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.cu-card>.cu-item {
+  display: block;
+  background-color: var(--white);
+  overflow: hidden;
+  border-radius: 25rpx;
+  /* height: 450rpx; */
+  margin: 30rpx;
+}
+
+.taskDesc {
+  color: #fff;
+  padding: 90rpx 60rpx;
+  font-size: 40rpx;
+  font-weight: 450;
+  transform: skew(-10deg, 0deg);
+  position: relative;
+  text-shadow: 0px 0px 6rpx rgba(0, 0, 0, 0.3)
+}
+
+.taskDesc::before {
+  content: "";
+  position: absolute;
+  width: 60rpx;
+  height: 6rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+  display: block;
+  top: 60rpx;
+  left: 50rpx;
+  transform: skew(10deg, 0deg);
+}
+
+.taskDesc::after {
+  content: "";
+  position: absolute;
+  width: 140rpx;
+  border-radius: 6rpx;
+  height: 24rpx;
+  background-color: #fff;
+  display: block;
+  bottom: 76rpx;
+  left: 90rpx;
+  transform: skew(10deg, 0deg);
+  opacity: 0.1;
+}
+
+.shadow-blur {
+  position: relative;
+}
+
+.shadow-blur::before {
+  content: "";
+  display: block;
+  background: inherit;
+  filter: blur(10rpx);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 10rpx;
+  left: 10rpx;
+  z-index: -1;
+  opacity: 0.4;
+  transform-origin: 0 0;
+  border-radius: inherit;
+  transform: scale(1, 1);
+}
+
+/* 悬赏领取任务 */
+.getTask {
+  position: relative;
+  left: 280px;
+  top:-50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 450;
+  width: 4.5em;
+}
+
+/* 设计卡片动画效果 */
+.cardDynamic {
+  animation: jump 1s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.plane_item {
+  background-color: #fff;
+}

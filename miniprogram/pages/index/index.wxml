@@ -1,0 +1,84 @@
+  <!-- 轮播图 -->
+  <view class="banner">
+    <swiper indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" circular autoplay interval="4000">
+        <swiper-item>
+            <image mode="widthFix" src="https://6c71-lq0504-3g69h7zi82b6f6b2-1329103136.tcb.qcloud.la/banner/left_banner.jpg?sign=ce47f3afeb8a2eaa1b766885c06d120c&t=1725242949" />
+        </swiper-item>
+        <swiper-item>
+            <image mode="widthFix" src="https://6c71-lq0504-3g69h7zi82b6f6b2-1329103136.tcb.qcloud.la/banner/mid_banner.jpg?sign=4a2883473727de20328d423983324dcb&t=1725242969" />
+        </swiper-item>
+        <swiper-item>
+            <image mode="widthFix" src="https://6c71-lq0504-3g69h7zi82b6f6b2-1329103136.tcb.qcloud.la/banner/left_banner.jpg?sign=4006cddee40a74b568d437625b7489ac&t=1725242980" />
+        </swiper-item>
+    </swiper>
+  </view>
+
+  <!-- 图片＋文件横向导航栏 -->
+  <scroll-view class="major" scroll-x="true">   
+    <block wx:for="{{navData}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+      <view  class="box" data-name="{{navItem.cat_name}}" data-current="{{idx}}" bindtap="switchNav">
+        <image class="pic" src="{{navItem.pic}}"/>
+        <view class="txt {{currentTab == idx ?'active':''}}">
+        {{navItem.cat_name}}</view>
+      </view>
+		</block>
+  </scroll-view>
+
+  <!-- 各导航面板 -->
+  <!-- 文章 -->
+  <view  wx:if="{{currentTab==0}}" >
+      <view wx:for="{{articleList}}" wx:key="index">
+        <navigator url="../articleDetail/articleDetail?data={{item._id}}" open-type="navigate" hover-class="none">
+          <view class="navBox">
+            <view class="left">
+              <view><text class="boxTitle">{{item.title}}</text></view> 
+              <view><text class="boxTime">{{item.createTime}}</text></view> 
+            </view>
+            <view class="right">
+              <image mode="heightFix" src="{{item.image[0]}}" />
+            </view> 
+          </view>
+        </navigator>
+      </view>
+      <!-- 加载 -->
+      <view class="bomTxt">
+          <view hidden="{{!loading}}">正在加载...</view>
+          <view hidden="{{!loaded}}">已加载全部</view>
+      </view>
+  </view>
+
+  <!-- 纪念日/倒数日 -->
+  <view  wx:elif="{{currentTab==1}}" class="plane_item">
+    <scroll-view style="height: 450px; width: 100vw;" scroll-y class="cardDynamic">
+      <dayBox wx:for="{{daysList}}" wx:key="index" dayName="{{item.dayName}}" dayTime="{{item.dayTime}}" dayTag="{{item.dayTag}}" dayColor="{{item.dayColor}}" dayGap="{{item.dayGap}}" wx:key="index"></dayBox>
+    </scroll-view>
+  </view>
+
+
+  <!-- 悬赏 -->
+  <view wx:elif="{{currentTab==2}}" class="plane_item">
+    <scroll-view style="height: 450px; width: 100vw;" scroll-y>
+    <view class="cu-card">
+        <view class="cu-item bg-img shadow-blur cardDynamic" style="background-image: linear-gradient({{item.bg_color}});"  wx:for="{{tasks}}" wx:key="index" >
+        <view class="taskDesc">
+          {{item.taskDesc}} | {{item.taskReward}} 币
+        </view>
+        <view class="getTask" data-task="{{item}}" bindtap="receiveTask">领取任务</view>
+        </view>
+    </view>
+    </scroll-view>
+  </view>
+
+  <!-- 购物 -->
+  <view  wx:elif="{{currentTab==3}}" class="plane_item">
+    <scroll-view style="height: 450px; width: 100vw;" scroll-y>
+      <cardBox wx:for="{{cards}}" cardName="{{item.cardName}}" _id="{{item._id}}" cardID="{{item.cardID}}" cardType="{{item.cardType}}" cardAmount="{{item.cardAmount}}" cardColor="{{item.cardColor}}" cardLogo="{{item.cardLogo}}"></cardBox>
+    </scroll-view>
+  </view>
+
+  <!-- 憧憬 -->
+  <view wx:elif="{{currentTab==4}}" class="plane_item">
+    <scroll-view style="height: 410px; width: 100vw;" scroll-y>
+    </scroll-view>
+  </view>
+

@@ -1,0 +1,106 @@
+<block wx:if="{{!userInfo}}">  
+  <!-- 登录区域 -->
+  <view class="container">
+    <view class="wrapper">
+      <view class="left-top-sign">LOGIN</view>
+      <view class="welcome">
+        欢迎回来！
+      </view>
+      <view class="input-content">
+        <view class="input-item">
+          <input type="text" placeholder="请输入手机号码" id="phone" bindinput="inputMsg"/>
+        </view>
+        <view class="input-item">
+          <input type="password" placeholder="请输入密码" id="password" bindinput="inputMsg"/>
+        </view>
+      </view>
+      <button class="confirm-btn" bindtap="login">登录</button>
+      <view class="forget-section">
+        忘记密码?
+      </view>
+    </view>
+    <view class="register-section">
+      一生只有一个账号
+      <text>注册功能已被我废掉</text>
+    </view>
+  </view>
+</block>
+
+<block wx:else>
+
+  <view class="top-bg"></view>
+  <view class="box">
+    <!-- 头像 -->
+    <view class="head-box">
+      <button open-type="chooseAvatar" class="avatar" bindchooseavatar="chooseAvatar">
+        <image class="head-img" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+      </button>
+      <view class="nickname">
+        {{userInfo.nickName}}
+      </view>
+      <view class="coins">
+      金币：{{userInfo.coins}}
+      </view>
+    </view>
+    <!-- 第一部分列表 -->
+    <view>
+      <button class="row" style="width: 100%;" bindtap="myCardsClick">
+        <view class="left">
+          <icon class="icon-small" type="success" size="16"></icon>
+          <text class="text">我的卡包</text>
+        </view>
+        <view class="right">》</view>
+      </button>
+      <button class="row" style="width: 100%;" bindtap="myTasksClick">
+        <view class="left">
+          <icon class="icon-small" type="success" size="16"></icon>
+          <text class="text">我的任务</text>
+        </view>
+        <view class="right">》</view>
+      </button>
+      <!-- <button class="row" style="width: 100%;border-bottom: none;" bindtap="auditTasksClick">
+        <view class="left">
+          <icon class="icon-small" type="success" size="16"></icon>
+          <text class="text">审核任务</text>
+        </view>
+        <view class="right">》</view>
+      </button> -->
+    </view>
+  </view>
+  <!-- 第二部分列表 -->
+  <view class="end">
+    <button open-type="share" class="row" style="width: 100%;">
+      <view class="left">
+        <icon class="icon-small" type="success" size="16"></icon>
+        <text class="text">分享好友</text>
+      </view>
+      <view class="right">》</view>
+    </button>
+    <button open-type="contact" class="row" style="width: 100%;border-bottom: none;">
+      <view class="left">
+        <icon class="icon-small" type="success" size="16"></icon>
+        <text class="text">在线客服</text>
+      </view>
+      <view class="right">》</view>
+    </button>
+  </view>
+  <!-- 第三部分列表 -->
+  <view class="end">
+    <button bindtap="exitClick" class="row" style="width: 100%;border-bottom: none;">
+      <view class="left">
+        <icon class="icon-small" type="success" size="16"></icon>
+        <text class="text">退出登录</text>
+      </view>
+    </button>
+    <!-- <button class="row" open-type="chooseAvatar" bindchooseavatar="chooseAvatar" style="width: 100%;border-bottom: none;" wx:else>
+      <view class="left">
+        <icon class="icon-small" type="success" size="16"></icon>
+        <text class="text">立即登录</text>
+      </view>
+    </button> -->
+  </view>
+  <view class="footer">
+    <text>©倩影江行@djl</text>
+  </view>
+
+</block>

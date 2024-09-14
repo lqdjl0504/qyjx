@@ -1,0 +1,25 @@
+<view class="page">
+
+  <view class="cardMain" style="background: linear-gradient({{cardColor}});">
+
+    <view class="clearfix">
+      <image class="cardLogo" mode="scaleToFill" src="{{cardLogo}}"></image>
+      <view class="cardInfo">
+        <view class="first-child">{{cardName}}</view>
+        <view class="second-child">{{cardType}}</view>
+      </view>
+      <view class="cardAmount">
+        <view>面值：{{cardAmount}}币</view>
+      </view>
+    </view>
+
+    <view class="clearfix">
+      <view class="first-child">
+        {{cardID}}
+      </view>
+      <view class="buy" bindtap="buyCard" data-id="{{_id}}">购买</view>
+    </view>
+    
+  </view>
+
+</view>

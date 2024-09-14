@@ -1,0 +1,18 @@
+<!-- 标题和正文 -->
+<view class="cu-form-group" wx:for='{{InputList}}' wx:key='input'>
+  <!-- *title -->
+	<view class='title'>
+		<text decode="true">&nbsp;&nbsp;<text decode="true" style="color:#EE0A24;">*</text>{{item.title}}</text>
+	</view>
+  <!-- 输入框 -->
+	<input placeholder="{{item.placeholder}}" class='radius' id="{{item.id}}" type="{{item.type}}" maxlength='{{item.maxlength}}' style='color: #0080ff;' bindinput="InputData" value="{{isEdit?FormData.title:''}}">
+  </input>
+  <text class="currentWordNumber">{{currentWordNumber}}/{{item.maxlength}}</text>
+
+</view>
+
+<!-- 发布悬赏按钮 -->
+<view class="padding flex flex-direction tasks">
+	<button class='cu-btn lg submitbtn' form-type="SubmitEntrust" bindtap="Submit">发布悬赏</button>
+</view>
+

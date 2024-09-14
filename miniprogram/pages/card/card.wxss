@@ -1,0 +1,53 @@
+.page {
+  width: 100%;
+  height: 100%;
+}
+ 
+.page,
+.cardMain {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+ 
+.cardMain {
+  border-radius: 8px;
+  padding: 10px;
+  width: 90%;
+  height: 100px;
+  /* background: linear-gradient(to bottom right, #cd4100, #f8937f); */
+  color: #fff;
+  margin-top: 30px;
+ 
+}
+ 
+.clearfix {
+  flex-direction: row;
+  width: 90%;
+  height: 50px;
+  margin-top: 30rpx;
+}
+ 
+.cardLogo {
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+ 
+.cardInfo {
+  float: left;
+  margin-left: 10px;
+}
+ 
+.first-child {
+  font-size: 16px;
+}
+ 
+.second-child {
+  font-size: 10px;
+}
+ 

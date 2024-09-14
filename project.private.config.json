@@ -1,0 +1,120 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/myTasks/myTasks",
+          "pathName": "pages/myTasks/myTasks",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/myTasks/myTasks",
+          "pathName": "pages/myTasks/myTasks",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/publishDay/publishDay",
+          "pathName": "pages/publishDay/publishDay",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "components/dayBox/dayBox",
+          "pathName": "components/dayBox/dayBox",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/publishCard/publishCard",
+          "pathName": "pages/publishCard/publishCard",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/publishTask/publishTask",
+          "pathName": "pages/publishTask/publishTask",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "conponents/cardBox/cardBox",
+          "pathName": "conponents/cardBox/cardBox",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/publishTask/publishTask",
+          "pathName": "pages/publishTask/publishTask",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/publishArticle/publishArticle",
+          "pathName": "pages/publishArticle/publishArticle",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/publish/publish",
+          "pathName": "pages/publish/publish",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/articleDetail/articleDetail",
+          "pathName": "pages/articleDetail/articleDetail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/card/card",
+          "pathName": "pages/card/card",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/user/user",
+          "pathName": "pages/user/user",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/modifyUser/modifyUser",
+          "pathName": "pages/modifyUser/modifyUser",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        }
+      ]
+    }
+  },
+  "projectname": "倩影江行"
+}
