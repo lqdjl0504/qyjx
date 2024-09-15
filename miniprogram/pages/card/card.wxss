@@ -1,6 +1,30 @@
-.page {
+/* .page {
   width: 100%;
   height: 100%;
+} */
+
+/* 横向导航栏 */
+.nav {
+  height: 100rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 100rpx;
+  background: #f7f7f7;
+  font-size: 16px;
+  white-space: nowrap;
+  z-index: 99;
+  background-color: #fff;
+}
+.nav-item {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  color: #333;
+  overflow: hidden;
+}
+.nav-item.active{
+  color: #09bb07;
 }
  
 .page,
@@ -27,6 +51,7 @@
   width: 90%;
   height: 50px;
   margin-top: 30rpx;
+  display: flex;
 }
  
 .cardLogo {
@@ -51,3 +76,9 @@
   font-size: 10px;
 }
  
+.use {
+  position: absolute;
+  right: 18px;
+  top: 70px;
+  font-size: 18px;
+}

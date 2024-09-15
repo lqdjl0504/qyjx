@@ -25,7 +25,9 @@ exports.main = async (event, context) => {
             cardType: cardType,
             cardColor: cardColor,
             cardLogo: cardLogo,
-            createTime: db.serverDate()
+            createTime: db.serverDate(),
+            cardTag: true,  // 卡片是否已经售卖，true否，false是
+            cardUse: false  // 卡片是否已经使用，true是，false否
         },
         success:res=> { "添加成功" },
         fail: err=>{ console.log("添加失败") }
@@ -46,6 +48,29 @@ exports.main = async (event, context) => {
         _openid: wxContext.OPENID,
         cardTag: false
       },
+    })
+  }
+
+  if (event.type === 'getUnusedCards') {
+    const unusedCards = await db.collection(dbname).where({
+      _openid: wxContext.OPENID,
+      cardUse: false
+    }).get()
+    return unusedCards
+  }
+
+  if (event.type === 'getUsedCards') {
+    const usedCards = await db.collection(dbname).where({
+      _openid: wxContext.OPENID,
+      cardUse: true
+    }).get()
+    return usedCards
+  }
+
+  if (event.type === 'updateUseCard') {
+    let _id = event._id
+    return await db.collection(dbname).doc(_id).update({
+      cardUse: true
     })
   }
 

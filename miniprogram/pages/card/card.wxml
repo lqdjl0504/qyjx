@@ -1,19 +1,52 @@
-<view class="page" wx:for="{{myCards}}" wx:key="index">
-  <view class="cardMain" style="background: linear-gradient({{item.cardColor}});">
-  
-    <view class="clearfix">
-      <image class="cardLogo" mode="scaleToFill" src="{{item.cardLogo}}"></image>
-      <view class="cardInfo">
-        <view class="first-child">{{item.cardName}}</view>
-        <view class="second-child">{{item.cardType}}</view>
-      </view>
-    </view>
+<!-- 纯文字横向导航栏 -->
+<scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+    <block wx:for="{{navData}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+        <view class="nav-item {{currentTab == idx ?'active':''}}" data-name="{{navItem.cat_name}}" data-current="{{idx}}"
+            bindtap="switchNav">{{navItem.cat_name}}</view>
+    </block>
+</scroll-view>
 
-    <view class="clearfix">
-      <view class="first-child cardId">
-        {{item.cardID}}
+<!-- 未使用 -->
+<view wx:if="{{currentTab==0}}" class="plane_item">
+  <view wx:for="{{unusedCards}}" wx:key="index">
+    <view class="cardMain" style="background: linear-gradient({{item.cardColor}});">
+      <view class="clearfix">
+        <image class="cardLogo" mode="scaleToFill" src="{{item.cardLogo}}"></image>
+        <view class="cardInfo">
+          <view class="first-child">{{item.cardName}}</view>
+          <view class="second-child">{{item.cardType}}</view>
+        </view>
       </view>
+
+      <view class="clearfix">
+        <view class="first-child cardId">
+          {{item.cardID}}
+        </view>
+        <view class="use" bindtap="useCard" data-id="{{item._id}}">使用</view>
+      </view>
+      
     </view>
-    
+  </view>
+</view>
+
+<!-- 已使用 -->
+<view wx:elif="{{currentTab==1}}" class="plane_item">
+  <view wx:for="{{usedCards}}" wx:key="index">
+    <view class="cardMain" style="background: linear-gradient({{item.cardColor}});">
+      <view class="clearfix">
+        <image class="cardLogo" mode="scaleToFill" src="{{item.cardLogo}}"></image>
+        <view class="cardInfo">
+          <view class="first-child">{{item.cardName}}</view>
+          <view class="second-child">{{item.cardType}}</view>
+        </view>
+      </view>
+
+      <view class="clearfix">
+        <view class="first-child cardId">
+          {{item.cardID}}
+        </view>
+      </view>
+      
+    </view>
   </view>
 </view>
