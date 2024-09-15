@@ -68,14 +68,11 @@ Page({
               wx.hideLoading()
               console.log(res)
               wx.showToast({
-                title: '发布成功', // 提示的内容
-                icon: 'success', // 图标，有效值 "success", "loading", "none"
-                duration: 2000, // 提示的延迟时间，单位毫秒，默认：1500
-                mask: true // 是否显示透明蒙层，防止触摸穿透，默认：false
+                title: '发布成功',
+                icon: 'success', 
+                duration: 2000, 
+                mask: true 
               });
-              // wx.switchTab({
-              //   url: '../publish/publish',
-              // })
           },
           fail: err => {
               wx.hideLoading()

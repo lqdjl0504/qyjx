@@ -138,9 +138,7 @@ Page({
 
   // 悬赏任务
   getTask() {
-    db.collection('tasks').where({
-      taskTag: true
-    }).get({
+    db.collection('tasks').get({
       success:res=> {
         this.setData({
           tasks: res.data
