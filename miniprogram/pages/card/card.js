@@ -84,13 +84,29 @@ Page({
 
   useCard(event) {
     const id = event.currentTarget.dataset.id
-    wx.cloud.callFunction({
-      name: 'cards',
-      data: {
-          type: 'updateUseCard',
-          _id: id
-      },
-    })
+    wx.showModal({
+      title: '提示', // 标题
+      content: '这是一个模态对话框', // 内容
+      showCancel: true, // 是否显示取消按钮，默认为 true
+      cancelText: '取消', // 取消按钮的文字，默认为"取消"
+      confirmText: '确定', // 确定按钮的文字，默认为"确定"
+      success: function(res) {
+        if (res.confirm) {
+          console.log('用户点击确定');
+          wx.cloud.callFunction({
+            name: 'cards',
+            data: {
+                type: 'updateUseCard',
+                _id: id
+            },
+          })
+        } else if (res.cancel) {
+          console.log('用户点击取消');
+        }
+      }
+    });
+   
+
   },
 
   onLoad: function() {  
