@@ -16,24 +16,24 @@ Page({
     // 横向导航栏
     navData: [{
       id: 0,
-      cat_name: '文章',
-      pic: '/images/kecheng1.png'
+      cat_name: '爱之路',
+      pic: '/images/tabBar_article.png'
     }, {
         id: 1,
         cat_name: '纪念日',
-        pic: '/images/kecheng2.png'
+        pic: '/images/tabBar_anniversary.png'
     }, {
       id: 2,
       cat_name: '悬赏',
-      pic: '/images/kecheng3.png'
+      pic: '/images/tabBar_task.png'
     }, {
       id: 3,
-      cat_name: '购物',
-      pic: '/images/kecheng4.png'
+      cat_name: '购卡',
+      pic: '/images/tabBar_card.png'
     }, {
       id: 4,
       cat_name: '憧憬',
-      pic: '/images/kecheng5.png'
+      pic: '/images/tabBar_plan.png'
     }],
     currentTab: 0,
     navScrollLeft: 0,
@@ -43,7 +43,7 @@ Page({
     daysList: [],
     // 悬赏
     tasks: [],
-    // 购物
+    // 购卡
     cards: []
   },
 
@@ -222,6 +222,7 @@ Page({
 
   // 横向导航栏选择事件
   switchNav(event) {
+    var that = this
     var cur = event.currentTarget.dataset.current;
     if (this.data.currentTab == cur) {
         return false;
@@ -234,7 +235,11 @@ Page({
     console.log("choose tag to execute",tag)
     // 根据tag的值调用不同的函数
     switch (tag) {
-      case '文章':
+      case '爱之路':
+          that.setData({
+            page: 0,
+            articleList: []
+          })
           this.getArticles();
           break;
       case '纪念日':
@@ -243,7 +248,7 @@ Page({
       case '悬赏':
           this.getTask();
           break;
-      case '购物':
+      case '购卡':
           this.getGoods();
           break;
       case '憧憬':
@@ -273,6 +278,10 @@ Page({
     console.log("------------onShow-----------")
     switch (this.data.currentTab) {
       case 0:
+          this.setData({
+            page: 0,
+            articleList: []
+          })
           this.getArticles();
           break;
       case 1:
@@ -309,8 +318,13 @@ Page({
    */
   onPullDownRefresh: function () {
     console.log("------------onpulldownrefresh-----------")
+    console.log(this.data.currentTab)
     switch (this.data.currentTab) {
       case 0:
+          this.setData({
+            page: 0,
+            articleList: []
+          })
           this.getArticles();
           break;
       case 1:

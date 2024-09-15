@@ -4,6 +4,7 @@
     "pages/user/user",
     "pages/card/card",
     "pages/publish/publish",
+    "pages/amusement/amusement",
     "pages/articleDetail/articleDetail",
     "pages/publishArticle/publishArticle",
     "pages/publishTask/publishTask",
@@ -11,7 +12,8 @@
     "components/dayBox/dayBox",
     "pages/publishDay/publishDay",
     "pages/myTasks/myTasks",
-    "pages/auditTasks/auditTasks"
+    "pages/auditTasks/auditTasks",
+    "pages/bubbleGame/bubbleGame"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -44,10 +46,10 @@
         "selectedIconPath": "./images/selectedPublish.png"
       },
       {
-        "pagePath": "pages/card/card",
-        "text": "卡包",
-        "iconPath": "./images/card.png",
-        "selectedIconPath": "./images/selectedCard.png"
+        "pagePath": "pages/amusement/amusement",
+        "text": "娱乐",
+        "iconPath": "./images/amusement.png",
+        "selectedIconPath": "./images/selectedAmusement.png"
       },
       {
         "pagePath": "pages/user/user",

@@ -1,0 +1,5 @@
+<view class="bubble">
+  <navigator url="../bubbleGame/bubbleGame" hover-class="none" >
+      <view class="bubbleItem" style="background: linear-gradient(to left, #1221ac 0%, #10eb97 100%);" ><text>抓泡泡</text></view>
+  </navigator>
+</view>

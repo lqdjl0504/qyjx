@@ -3,18 +3,24 @@ page {
 }
 .container {
   width: 100vw;
+  /* border: 1px solid red; */
 }
-.publish {
-  height: 50px;
-  width: 40%;
+/* 列布局 */
+.flexBetween{display: flex;justify-content: space-between;align-items: center}
+
+.item {
+  height: 65px;
+  width: 45vw;
   display: flex;
-  padding: 20px;
-  border-radius: 20px;
+  /* padding: 4px; */
+  border-radius: 10px;
   margin: 20px auto;
+  /* border: 1px solid red; */
 }
 
-.publish text{
+.item text{
   margin: auto;
   font-size: 20px;
   color:#fff;
 }
+

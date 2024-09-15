@@ -35,11 +35,13 @@
       <button open-type="chooseAvatar" class="avatar" bindchooseavatar="chooseAvatar">
         <image class="head-img" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
       </button>
-      <view class="nickname">
-        {{userInfo.nickName}}
-      </view>
-      <view class="coins">
-      金币：{{userInfo.coins}}
+      <view class="nickCoins">
+        <view class="nickname">
+        昵称：{{userInfo.nickName}}
+        </view>
+        <view class="coins">
+        金币：{{userInfo.coins}}
+        </view>
       </view>
     </view>
     <!-- 第一部分列表 -->

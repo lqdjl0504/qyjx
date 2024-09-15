@@ -116,5 +116,8 @@
       ]
     }
   },
-  "projectname": "倩影江行"
+  "projectname": "倩影江行",
+  "setting": {
+    "compileHotReLoad": true
+  }
 }

@@ -82,7 +82,7 @@ Page({
   // 我的卡包
   myCardsClick() {
     console.log('我的卡包监听');
-    wx.switchTab({
+    wx.navigateTo({
       url: '../card/card',
     })
   },

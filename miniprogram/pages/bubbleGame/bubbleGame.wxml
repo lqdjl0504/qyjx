@@ -1,0 +1,2 @@
+<canvas id="bubbleCanvas" type="2d" style="position: absolute; top: 0; left: 0; width: 100vw;height: 100vh;" bindtap="click"></canvas>
+<button wx:if="{{visible}}" bindtap="again">重来</button>

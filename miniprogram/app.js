@@ -31,16 +31,17 @@ App({
                   var tag = res.data[0].tag
 
                   if (tag === '老公') {
-                    this.globalData.Lover_openid = 'lqdjl0504testOpenid'   //老婆的openid
+                    this.globalData.Lover_openid = 'obflu7YdOUtH2qbOrgcKGcCcH-C4'   //老婆的openid
                    }else{
                     this.globalData.Lover_openid = 'obflu7Z32gpeHE3oXZ5dwUZvvRDs'   //老公的openid
                    }
+                   console.log("this.globalData.Lover_openid: ", this.globalData.Lover_openid)
                 }
             }
           })
         },
         fail: err => {
-            console.log("调用云函数失败，请查看是否安装依赖wx-server-sdk")
+            console.log("调用云函数失败，请查看是否选择云环境或者安装依赖wx-server-sdk")
         }
      })
      

@@ -25,7 +25,7 @@
 
 <!-- 文章详情 -->
 <view class="contentBox">
-    <view class="contentBox-row-title title-text-font-weight">{{detail.title}}</view>
+    <view class="contentBox-row-title text-grey title-text-font-weight">{{detail.title}}</view>
     <textarea disabled="true" auto-height="true" placeholder="暂无" 
     maxlength="200" value="{{detail.content}}"></textarea>
 </view>

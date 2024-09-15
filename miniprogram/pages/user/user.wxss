@@ -158,12 +158,7 @@ page{
   background-color: #fbdbdc;
 }
 
-/* 用户昵称样式 */
-.nickname {
-  color: #606266;
-  font-size: 16px;
-  margin-top: 10px;
-}
+
 
 .tip {
   font-size: 26rpx;
@@ -220,11 +215,26 @@ page{
   color: gray;
 }
 
+
+
+/* 昵称和币 */
+.nickCoins {
+  display: flex;
+  margin-top: 10px;
+
+}
+/* 用户昵称样式 */
+.nickname {
+  color: #606266;
+  font-size: 16px;
+  margin: 0px 20px;
+}
 /* 币 */
 .coins {
-  font-size: 20px;
-  color: #FBD26A;
-  position:absolute;
-  right: 30px;
-  font-weight: bold;
+  font-size: 16px;
+  color: #606266;
+  margin: 0px 20px;
+  /* position:absolute;
+  right: 30px; */
+  /* font-weight: bold; */
 }

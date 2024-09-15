@@ -4,9 +4,15 @@ page {
 }
 
   /* 轮播图 */
-  .banner{ width:100%; height: 295rpx; }
-  .banner swiper{ height: 100%; width:100%;}
-  .banner image{ width: 100%; height: 295rpx;}
+  .banner swiper{ 
+    margin-top: 2px;
+    height: 32vh;
+  }
+  .banner .imageItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 
   /* 横向导航栏 */

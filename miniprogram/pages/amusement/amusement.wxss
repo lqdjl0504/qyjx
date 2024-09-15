@@ -1,0 +1,12 @@
+.bubble {
+  /* height: ; */
+}
+.bubbleItem {
+  height: 50px;
+  display: flex;
+}
+.bubbleItem text{
+  margin: auto;
+  font-size: 20px;
+  color:#fff;
+}
