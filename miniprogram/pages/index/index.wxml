@@ -2,13 +2,13 @@
   <view class="banner">
     <swiper indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" circular autoplay interval="4000">
         <swiper-item class="imageItem">
-              <image mode="heightFix" src="https://6c71-lq0504-3g69h7zi82b6f6b2-1329103136.tcb.qcloud.la/lovePic/1725785469843-2540836.jpg?sign=f9518485fca7c609e97d4cd3265edad9&t=1726376169" />
+              <image mode="heightFix" src="https://6c71-lq0504-3g69h7zi82b6f6b2-1329103136.tcb.qcloud.la/banner/left_banner.jpg?sign=1fc1ffa90faba8bd95bfa3390e366c64&t=1726546484" />
         </swiper-item>
         <swiper-item class="imageItem">
-            <image mode="heightFix" src="https://6c71-lq0504-3g69h7zi82b6f6b2-1329103136.tcb.qcloud.la/banner/20240915134335.jpg?sign=b8616510a84cca653fefeae4afc617d3&t=1726379051" />
+            <image mode="heightFix" src="https://6c71-lq0504-3g69h7zi82b6f6b2-1329103136.tcb.qcloud.la/banner/mid_banner.jpg?sign=72f6936c2f99f76d695d45665e4fc49b&t=1726546533" />
         </swiper-item>
         <swiper-item class="imageItem">
-            <image mode="heightFix" src="https://6c71-lq0504-3g69h7zi82b6f6b2-1329103136.tcb.qcloud.la/banner/20240915.jpg?sign=bfd18f6638d83ffa12fae261bbd1830b&t=1726379065" />
+            <image mode="heightFix" src="https://6c71-lq0504-3g69h7zi82b6f6b2-1329103136.tcb.qcloud.la/banner/right_banner.jpg?sign=11d236578bc9bd4556aca08b0f846674&t=1726546542" />
         </swiper-item>
     </swiper>
   </view>

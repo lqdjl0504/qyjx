@@ -1,0 +1,45 @@
+{
+  "_id": "f380561066d82ca9099c6af272c576d8",
+  "dayName": "恋爱纪念日",
+  "dayTime": {
+    "$date": "2024-05-04T10:00:00Z"
+  },
+  "dayColor": "45deg, #FFC0CB 0%, #FFB6C1 48%, #FF8C94 53%",
+  "dayTag": 0.0
+}
+{
+  "_id": "ef45322e66d82e8609a2ea8f5e63a2eb",
+  "dayName": "老婆生日",
+  "dayTime": {
+    "$date": "1999-01-27T09:55:15Z"
+  },
+  "dayColor": "45deg, #FFC0CB 0%, #FFB6C1 48%, #FF8C94 53%",
+  "dayTag": 1.0
+}
+{
+  "_id": "9bf3df1366d859c609a3e5770bcd8dbe",
+  "dayName": "老公生日",
+  "dayTime": {
+    "$date": "1998-07-26T12:59:34Z"
+  },
+  "dayColor": "45deg, #FFC0CB 0%, #FFB6C1 48%, #FF8C94 53%",
+  "dayTag": 1.0
+}
+{
+  "_id": "f380561066d859fc09a13eb450e2c31b",
+  "dayName": "初识",
+  "dayTime": {
+    "$date": "2024-03-12T13:00:26Z"
+  },
+  "dayColor": "45deg, #FFC0CB 0%, #FFB6C1 48%, #FF8C94 53%",
+  "dayTag": 0.0
+}
+{
+  "_id": "25e993b766e3b0bc0ae85c166859e606",
+  "dayName": "初见",
+  "dayTag": 0,
+  "dayTime": {
+    "$date": "2024-03-23T10:00:00Z"
+  },
+  "dayColor": "45deg, #79214c 95%, #b77b92 176%, #ffe971 100%"
+}

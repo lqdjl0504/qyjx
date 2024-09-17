@@ -1,0 +1,80 @@
+{
+  "_id": "9bf3df1366d8811409a8145c506bcf01",
+  "bg_color": "45deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 17%",
+  "taskDesc": "唱一首情歌",
+  "taskReward": 100.0,
+  "_openid": "",
+  "createTime": {
+    "$date": "2024-09-05T16:41:26.218Z"
+  }
+}
+{
+  "_id": "9c1e6a3166d8815f09b012dc692c0710",
+  "bg_color": "259deg,#FFC796 9%,#FF6B95 67%,#6c5ce7 5%",
+  "taskDesc": "按摩十分钟",
+  "taskReward": 200.0,
+  "_openid": "",
+  "createTime": {
+    "$date": "2024-09-05T16:41:51.085Z"
+  }
+}
+{
+  "_id": "8df0e92f66da775b09d35ac7545e9f13",
+  "taskDesc": "洗碗大师",
+  "taskReward": 50,
+  "createTime": {
+    "$date": "2024-09-06T03:30:35.853Z"
+  },
+  "bg_color": "45deg, #485405 16%, #02157c 113%, #1ff3df 100%",
+  "_openid": ""
+}
+{
+  "_id": "8df0e92f66da77dd09d365a4712bc935",
+  "taskDesc": "拖地",
+  "taskReward": 80,
+  "createTime": {
+    "$date": "2024-09-06T03:32:45.754Z"
+  },
+  "bg_color": "45deg, #367d49 32%, #8cc2d8 48%, #1a8532 100%",
+  "_openid": ""
+}
+{
+  "_id": "25e993b766daee2b09e4c3aa44f17d45",
+  "taskDesc": "美味晚餐",
+  "taskReward": 150,
+  "createTime": {
+    "$date": "2024-09-06T11:57:31.111Z"
+  },
+  "bg_color": "45deg, #776641 90%, #46718a 132%, #ea2ec2 100%",
+  "_openid": ""
+}
+{
+  "_id": "9bf3df1366e6be580b2fbc2a0b499c16",
+  "_openid": "obflu7Z32gpeHE3oXZ5dwUZvvRDs",
+  "taskDesc": "一菜厨师",
+  "taskReward": 50,
+  "createTime": {
+    "$date": "2024-09-15T11:00:40.395Z"
+  },
+  "bg_color": "45deg, #d905a4 50%, #446f04 80%, #9bfd54 100%"
+}
+{
+  "_id": "8df0e92f66e6be680b2f4bb270dbf89c",
+  "_openid": "obflu7Z32gpeHE3oXZ5dwUZvvRDs",
+  "taskDesc": "两菜厨师",
+  "taskReward": 100,
+  "createTime": {
+    "$date": "2024-09-15T11:00:56.169Z"
+  },
+  "bg_color": "45deg, #ff9157 79%, #3e5cca 120%, #40f1e8 100%"
+}
+{
+  "_id": "25e993b766e6be710b35ac2711c0c7b9",
+  "_openid": "obflu7Z32gpeHE3oXZ5dwUZvvRDs",
+  "taskDesc": "三菜厨师",
+  "taskReward": 150,
+  "createTime": {
+    "$date": "2024-09-15T11:01:05.146Z"
+  },
+  "bg_color": "45deg, #63d6b4 5%, #00b3ad 30%, #9ab3fa 100%"
+}

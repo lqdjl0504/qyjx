@@ -1,0 +1,77 @@
+{
+  "_id": "9bf3df1366e4591f0afaafed09dd1bf3",
+  "_openid": "obflu7Z32gpeHE3oXZ5dwUZvvRDs",
+  "createTime": {
+    "$date": "2024-09-13T15:24:23.264Z"
+  },
+  "taskDesc": "按摩十分钟",
+  "taskReward": 200.0,
+  "bg_color": "259deg,#FFC796 9%,#FF6B95 67%,#6c5ce7 5%",
+  "taskTag": 1.0
+}
+{
+  "_id": "8df0e92f66e4e9b80b051c3a5e0b2486",
+  "taskDesc": "美味晚餐",
+  "taskReward": 150.0,
+  "_openid": "obflu7Z32gpeHE3oXZ5dwUZvvRDs",
+  "bg_color": "45deg, #776641 90%, #46718a 132%, #ea2ec2 100%",
+  "createTime": {
+    "$date": "2024-09-14T01:41:13.343Z"
+  },
+  "taskTag": 2
+}
+{
+  "_id": "2ad666ce66e54c8e0b184dda34bf8b95",
+  "taskReward": 50.0,
+  "taskTag": 1.0,
+  "_openid": "obflu7Z32gpeHE3oXZ5dwUZvvRDs",
+  "bg_color": "45deg, #485405 16%, #02157c 113%, #1ff3df 100%",
+  "createTime": {
+    "$date": "2024-09-14T08:42:54.532Z"
+  },
+  "taskDesc": "洗碗大师"
+}
+{
+  "_id": "2ad666ce66e5566f0b195b3f72ecdcaa",
+  "taskReward": 200.0,
+  "taskTag": 1.0,
+  "_openid": "obflu7YdOUtH2qbOrgcKGcCcH-C4",
+  "bg_color": "259deg,#FFC796 9%,#FF6B95 67%,#6c5ce7 5%",
+  "createTime": {
+    "$date": "2024-09-14T09:25:02.413Z"
+  },
+  "taskDesc": "按摩十分钟"
+}
+{
+  "_id": "8df0e92f66e5a0a70b18a3a55be3a417",
+  "taskReward": 100.0,
+  "taskTag": 2,
+  "_openid": "obflu7YdOUtH2qbOrgcKGcCcH-C4",
+  "bg_color": "45deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 17%",
+  "createTime": {
+    "$date": "2024-09-14T14:41:42.183Z"
+  },
+  "taskDesc": "唱一首情歌"
+}
+{
+  "_id": "9c1e6a3166e909260b6e74d579d448f3",
+  "taskDesc": "一菜厨师",
+  "taskReward": 50.0,
+  "taskTag": 0.0,
+  "_openid": "obflu7Z32gpeHE3oXZ5dwUZvvRDs",
+  "bg_color": "45deg, #d905a4 50%, #446f04 80%, #9bfd54 100%",
+  "createTime": {
+    "$date": "2024-09-17T04:44:22.089Z"
+  }
+}
+{
+  "_id": "f380561066e909380b62a3bc6f4c6159",
+  "taskReward": 80.0,
+  "taskTag": 0.0,
+  "_openid": "obflu7Z32gpeHE3oXZ5dwUZvvRDs",
+  "bg_color": "45deg, #367d49 32%, #8cc2d8 48%, #1a8532 100%",
+  "createTime": {
+    "$date": "2024-09-17T04:44:40.672Z"
+  },
+  "taskDesc": "拖地"
+}

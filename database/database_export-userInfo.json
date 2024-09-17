@@ -1,0 +1,21 @@
+{
+  "_id": "2ad666ce66d672400963d2263b29c08a",
+  "password": "123",
+  "phone": "",
+  "nickName": "",
+  "avatarUrl": "",
+  "_openid": "obflu7Z32gpeHE3oXZ5dwUZvvRDs",
+  "coins": 255.0,
+  "tag": "老公"
+}
+
+{
+  "_id": "2ad666ce66e540520b16f93c620617d8",
+  "tag": "老婆",
+  "phone": "",
+  "password": "123",
+  "coins": 65.0,
+  "nickName": "",
+  "_openid": "obflu7YdOUtH2qbOrgcKGcCcH-C4",
+  "avatarUrl": ""
+}
