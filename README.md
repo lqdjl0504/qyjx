@@ -15,9 +15,7 @@
 
 
 ## 倩影江行小程序框架图
-
-![po_bhcfcdjgieggca](http://www.kdocs.cn/api/v3/office/copy/RGptanludDVuVGhid2N0UlMra3M0V2tTY1BvTWtUcWZyM1NRcnBwdWx4RVVMdEZKS2lkc051SjEwa0hFQ2tKcmZFSXRWMUU0VDFuaVp5a1lOOU8zQzBlQjd4ZGcwWExhSUk5b0cyY1I3UzYzQmVTWStabzBKZVZMWmtiRjQ3ckFiRVBRRDdJSHplTm5hR3BwUXdKRitIK09ZSVcrcGZIWUJIcEZCamppZVMzU2Y4MWtTWFdGUGd5THRqZ0VPNml6UWNjT1NhMzBkY01rbWhPWmdpSmViV092cHdGc2h2ckhzTkF1Z0ovcHdOckwxKzdzSGpLWVB3MmY0SlRjNE94YmUzMXpCcVNFSUUwPQ==/attach/object/7HVOGQQ3ACQAS?)
-
+![image](https://github.com/user-attachments/assets/f74e2967-4412-4597-b9fa-1b6c5e9a8f06)
 
 
 ## 功能介绍
@@ -42,7 +40,8 @@
 
 ## 小程序展示
 
-![2024-09-17-12-49-02](C:\Users\代江林\Desktop\2024-09-17-12-49-02.gif)
+![image](https://github.com/user-attachments/assets/cbea170b-bc9d-454a-9fb2-2a2c00cecd4c)
+
 
 
 
